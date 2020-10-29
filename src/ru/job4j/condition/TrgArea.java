@@ -5,8 +5,8 @@ import java.net.PortUnreachableException;
 public class TrgArea {
     public static double area(double a, double b, double c){
         double p = (a + b + c)/2;
-        double S = Math.sqrt(p*(p-a)*(p-b)*(p-c));
-        return S;
+        return Math.sqrt(p*(p-a)*(p-b)*(p-c));
+
     }
     public static void main(String[] args) {
         double result = TrgArea.area(2,2,2);
