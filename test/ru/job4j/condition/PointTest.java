@@ -51,6 +51,16 @@ public class PointTest {
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
 
+
     }
 
+    @Test
+    public void when36to85Then2() {
+        int x1 = 3;
+        int y1 = -6;
+        int x2 = -8;
+        int y2 = 5;
+        double expected = 15.55;
+        double out = Point.distance(x1, y1, x2, y2);
+        Assert.assertEquals(expected, out, 0.01);
     }
