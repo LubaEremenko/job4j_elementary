@@ -20,8 +20,8 @@ public class DummyBot {
        System.out.println(rsl);
        // String rsl = DummyBot.answer("Что ты думаешь о j4j?");
        // System.out.println(rsl);
-       //String rsl = DummyBot.answer("Привет, Бот");
-       //System.out.println(rsl);
+       // rsl = DummyBot.answer("Привет, Бот");
+      // System.out.println(rsl);
 
     }
 }
