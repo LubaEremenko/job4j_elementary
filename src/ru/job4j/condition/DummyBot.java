@@ -16,7 +16,7 @@ public class DummyBot {
     }
 
     public static void main(String[] args) {
-       String rsl = DummyBot.answer("Пока");
+       String rsl = DummyBot.answer("2*2");
        System.out.println(rsl);
        // String rsl = DummyBot.answer("Что ты думаешь о j4j?");
        // System.out.println(rsl);

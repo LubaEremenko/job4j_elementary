@@ -17,7 +17,7 @@ public class DummyBotTest {
     @Test
     public void whenByeBot() {
         DummyBot db = new DummyBot();
-        assertThat(db.answer("Пока."), is("До скорой встречи."));
+        assertThat(db.answer("Пока"), is("До скорой встречи."));
     }
 
     @Test
