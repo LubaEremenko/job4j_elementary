@@ -10,11 +10,11 @@ public class Board {
                 } else {
                     System.out.print("|_|");
                 }
-                System.out.println(" ");
+
             }
+            System.out.println(" ");
         }
     }
-
 
     public static void main(String[] args) {
         paint(3, 3);
