@@ -8,10 +8,13 @@ public class CheckPrimeNumber {
             if (temp == 0) {
                 System.out.println(number + " is not a prime");
                 prime = false;
+                break;
+
             } else {
                 System.out.println(number + " is a prime");
+
             }
-            break;
+
         }
 
         return prime;
