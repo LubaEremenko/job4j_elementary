@@ -4,9 +4,8 @@ public class PrimeNumber {
     public static int calc(int finish) {
         int count = 0;
         for (int number = 1; number <= finish; number++) {
-            if (CheckPrimeNumber.check(number) == true) {
+            if (CheckPrimeNumber.check(number)) {
                 count = count + 1;
-                System.out.println(finish + " contains " + count + " primes.");
 
             }
 
@@ -15,6 +14,7 @@ public class PrimeNumber {
     }
 
     public static void main(String[] args) {
-        int count = PrimeNumber.calc(11);
+        int count = PrimeNumber.calc(5);
+        System.out.println(count);
     }
 }
