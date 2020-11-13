@@ -21,7 +21,7 @@ public class CheckPrimeNumber {
     }
 
     public static void main(String[] args) {
-        boolean prime = CheckPrimeNumber.check(10);
+        boolean prime = CheckPrimeNumber.check(24);
 
     }
 
