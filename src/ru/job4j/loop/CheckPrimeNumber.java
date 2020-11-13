@@ -6,22 +6,18 @@ public class CheckPrimeNumber {
         for (int i = 2; i <= number / 2; i++) {
             int temp = number % i;
             if (temp == 0) {
-                System.out.println(number + " is not a prime");
                 prime = false;
                 break;
 
-            } else {
-                System.out.println(number + " is a prime");
-
             }
+        }
+        return prime;
 
         }
 
-        return prime;
-    }
-
     public static void main(String[] args) {
-        boolean prime = CheckPrimeNumber.check(24);
+        boolean prime = CheckPrimeNumber.check(10);
+        System.out.println(prime);
 
     }
 
