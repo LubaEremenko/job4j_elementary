@@ -1,24 +1,20 @@
 package ru.job4j.loop;
 
 public class Mortgage {
-    public static double year(double amount, double salary, double percent) {
-        double year = 0;
-        double temp, tempNextYear;
-        while (double reminderPreviousYear <= 0) {
-            temp = amount * percent;
-            reminderPreviousYear = temp - salary;
-            tempNextYear = reminderPreviousYear * percent + reminderPreviousYear;
-
-        }
+    public static int data(int amount, int salary, double percent) {
+        int year = 0;
+        while (amount > 0) {
+            amount = amount * percent / 100 - salary;
+            year++;
+            }
         return year;
 
     }
 
     public static void main(String[] arg) {
-        double year = Mortgage.year(100, 70, 50);
-        System.out.println("На выплату кредита потребуется " + year + "года/лет.");
+        double year = Mortgage.data(100, 120, 50);
+        System.out.println("На выплату кредита потребуется " + year + " года/лет.");
 
     }
-
 
 }
