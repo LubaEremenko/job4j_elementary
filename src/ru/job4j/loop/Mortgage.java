@@ -13,7 +13,7 @@ public class Mortgage {
 
     public static void main(String[] arg) {
         double year = Mortgage.data(100, 120, 50);
-        System.out.println("На выплату кредита потребуется " + year + " год(a).");
+        System.out.println("На выплату кредита потребуется " + year + " годa.");
 
     }
 
