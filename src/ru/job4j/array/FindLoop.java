@@ -16,7 +16,7 @@ public class FindLoop {
 
     public static void main(String[] args) {
            int[] data = new int[] {5, 1, 4, 6, 8, 9};
-           int rsl = FindLoop.indexOf(new int[]{6}, 4);
+           int rsl = FindLoop.indexOf(data, 4);
            System.out.println(rsl);
 
     }
