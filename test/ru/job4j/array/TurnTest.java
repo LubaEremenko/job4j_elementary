@@ -16,9 +16,9 @@ public class TurnTest {
     @Test
     public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
         int temp;
-        int[] array = new int[] {1, 2, 3, 4, 5};
+        int[] array = new int[] {1, 2, 9, 4, 5};
         int[] result = Turn.back(array);
-        int[] expect = new int[] {5, 4, 3, 2, 1};
+        int[] expect = new int[] {5, 4, 9, 2, 1};
         assertThat(result, is(expect));
 
     }
