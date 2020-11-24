@@ -6,10 +6,9 @@ public class Check {
 
         boolean result = true;
         for (int index = 0; index < data.length - 1; index++) {
-            if (data[index]  == data[index + 1]) {
-             result = true;
-            } else {
+            if (data[index] != data[index + 1]) {
                 result = false;
+            break;
             }
 
         }
