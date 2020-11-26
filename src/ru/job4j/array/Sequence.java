@@ -14,8 +14,9 @@ public class Sequence {
         array[2][1] = 8;
         array[2][2] = 9;
         for (int index = 0; index < array.length; index++) {
-            for (int j = 0; j < array[index].length; j++) {
-                System.out.println(array[index][index]);
+            for (int j = 0; j < array.length; j++) {
+                int temp = array[index][j];
+                System.out.println(temp);
             }
         }
     }
