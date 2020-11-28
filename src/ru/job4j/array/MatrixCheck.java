@@ -12,7 +12,17 @@ public class MatrixCheck {
             return result;
     }
 
+    public static boolean monoVertical (char[][] board, int column) {
+        boolean result = true;
+        for (int j = 0; j < board.length; j++) {
+            if(board[j][column] != 'x') {
+                result = false;
+                break;
+            }
 
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
         char[][] board = {
@@ -20,7 +30,7 @@ public class MatrixCheck {
                 {'x', ' ', 'x'},
                 {'x', 'x', 'x'}
         };
-        boolean result = MatrixCheck.monoHorizontal(board, 1);
+        boolean result = MatrixCheck.monoVertical(board, 1);
         System.out.println(result);
 
     }
