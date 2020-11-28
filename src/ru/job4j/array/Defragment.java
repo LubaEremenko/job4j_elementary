@@ -27,7 +27,7 @@ public class Defragment {
             String[] compressed = compress(array);
             System.out.println();
             for (int i = 0; i < array.length; i++) {
-                System.out.println(array[i] + " ");
+                System.out.println(array[i] + " ");//не работает
 
             }
         }
