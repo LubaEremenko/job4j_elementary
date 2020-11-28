@@ -12,10 +12,10 @@ public class MatrixCheck {
             return result;
     }
 
-    public static boolean monoVertical (char[][] board, int column) {
+    public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (int j = 0; j < board.length; j++) {
-            if(board[j][column] != 'x') {
+            if (board[j][column] != 'x') {
                 result = false;
                 break;
             }
@@ -24,7 +24,7 @@ public class MatrixCheck {
         return result;
     }
 
-    public static char[] extractDiagonal(char[][] board){
+    public static char[] extractDiagonal(char[][] board) {
     char[] result = new char[board.length];
         for (int i = 0; i < board.length; i++) {
            result[i] = board[i][i];
@@ -34,13 +34,28 @@ public class MatrixCheck {
 
     }
 
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int i = 0; i < board.length; i++) {
+            if (monoHorizontal(board, i) || monoVertical(board, i)) {
+                result = true;
+                break;
+            }
+
+        }
+        return result;
+
+    }
+
     public static void main(String[] args) {
         char[][] board = {
-                {'s', 'x', 'x'},
-                {'x', 'u', 'x'},
-                {'x', 'x', 'n'}
+                {' ', 'x', ' ', ' ', ' '},
+                {' ', 'x', ' ', ' ', ' '},
+                {' ', 'x', ' ', ' ', ' '},
+                {' ', 'x', ' ', ' ', ' '},
+                {' ', 'x', ' ', ' ', ' '},
         };
-        char[] result = MatrixCheck.extractDiagonal(board);
+        boolean result = MatrixCheck.isWin(board);
         System.out.println(result);
 
     }

@@ -40,4 +40,43 @@ public class MatrixCheckTest {
         assertThat(result, is(expect));
     }
 
+    @Test
+    public void whenDataMonoByTrueThenTrue() {
+        char[][] board = {
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+        };
+        boolean result = MatrixCheck.isWin(board);
+        assertThat(result, is(true));
+    }
+
+    @Test
+    public void whenDataNotMonoByTrueThenFalse() {
+        char[][] board = {
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', 'x', ' ', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+        };
+        boolean result = MatrixCheck.isWin(board);
+        assertThat(result, is(false));
+    }
+
+    @Test
+    public void whenDataHMonoByTrueThenTrue() {
+        char[][] board = {
+                {' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' '},
+                {'x', 'x', 'x', 'x', 'x'},
+                {' ', ' ', 'x', ' ', ' '},
+                {' ', ' ', 'x', ' ', ' '},
+        };
+        boolean result = MatrixCheck.isWin(board);
+        assertThat(result, is(true));
+    }
+
 }
