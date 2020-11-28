@@ -16,7 +16,14 @@ public class Matrix {
 
     public static void main(String[] args) {
         int[][] table = Matrix.multiple(9);
-        System.out.println(table);
+        for (int i = 0; i < table.length; i++) {
+            System.out.println();
+            for (int j = 0; j < table[i].length; j++) {
+                System.out.println(table[i][j] + " ");
+
+            }
+
+        }
 
     }
 
