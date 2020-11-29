@@ -37,9 +37,12 @@ public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int i = 0; i < board.length; i++) {
-            if (monoHorizontal(board, i) || monoVertical(board, i)) {
-                result = true;
-                break;
+            if (board[i][i] == 'x') {
+                if (monoHorizontal(board, i) || monoVertical(board, i)){
+                    result = true;
+                    break;
+                }
+
             }
 
         }
@@ -50,7 +53,7 @@ public class MatrixCheck {
     public static void main(String[] args) {
         char[][] board = {
                 {' ', 'x', ' ', ' ', ' '},
-                {' ', 'x', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' '},
                 {' ', 'x', ' ', ' ', ' '},
                 {' ', 'x', ' ', ' ', ' '},
                 {' ', 'x', ' ', ' ', ' '},
