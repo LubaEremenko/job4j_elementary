@@ -11,6 +11,7 @@ public class Defragment {
                         String temp = array[nullIndex];
                         array[nullIndex] = array[notNullIndex];
                         array[notNullIndex] = temp;
+                        break;
                     }
                     System.out.println(array[i] + " ");
                 }
